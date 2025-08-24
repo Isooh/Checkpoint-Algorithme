@@ -1,0 +1,26 @@
+Algorithme: analysephrase
+variable:
+    longueur, mot, voyelles: entier
+    car:caractere
+début 
+// Initialisation des variables
+    longueur <- 0
+    mot <- 0
+    voyelles <- 0
+    lire(car)
+    // Instuction tant que pour determiner la longueur de la phrase
+    Tant que (car !='.') Faire
+        longueur:= longueur + 1
+        // Determination du nombre de mots
+        Si (car ==' ') Alors
+            mots:= mots + 1
+    FinFaire
+    // Détermination du nombre de voyelles
+        Si (car =='a' ou car =='e' ou car =='i' ou car =='o' ou car =='u' ou car =='y') Alors
+            voyelles:= voyelles + 1
+        FinSi
+        FinFaire
+        lire("la longueur de la phrase est de ", longueur)
+        lire("le nombre de mots est : ", mot)
+        lire("le nombre de voyelles est : ", voyelles)
+fin 
