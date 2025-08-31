@@ -1,0 +1,34 @@
+FONCTION sommeDistincts(ensemble1, ensemble2)
+    somme = 0
+    
+debut
+    POUR chaque element DANS ensemble1 FAIRE
+        SI element NON DANS ensemble2 ALORS
+            somme <- somme + element
+        FIN SI
+    FIN POUR
+    
+    POUR chaque element DANS ensemble2 FAIRE
+        SI element NON DANS ensemble1 ALORS
+            somme <- somme + element
+        FIN SI
+    FIN POUR
+    
+    RETOURNER somme
+fin
+
+// Exemple
+ensemble1 = [3, 1, 7, 9]
+ensemble2 = [2, 4, 1, 9, 3]
+AFFICHER sommeDistincts(ensemble1, ensemble2)  // Résultat: 13 (7+2+4)
+
+
+
+
+Pour (i allant de min à max) Faire
+    
+FinFaire
+
+Si (condition) Alors
+    
+Finsi
